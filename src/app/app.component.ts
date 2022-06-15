@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import getContests from 'date-converter/types';
+import getContests from './lib/date-converter/types';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,6 +8,7 @@ import getContests from 'date-converter/types';
 export class AppComponent {
   title = 'media';
   constructor() {
-    const date = getContests
+    const currentDate = getContests;
+    console.log('datesss', currentDate)
   }
 }
